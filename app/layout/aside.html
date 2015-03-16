@@ -21,14 +21,14 @@
                             <input type="text"
                                    placeholder="City"
                                    ng-model="vm.searchFields.from"
-                                   typeahead="flight.from for flight in vm.flights| unique:'from' | filter:$viewValue | limitTo:5" class="search-input">
+                                   typeahead="flight.from for flight in vm.flights| unique:'from' | filter:{'from':$viewValue} | limitTo:5" class="search-input">
                         </div>
                         <div class="form-group col-md-12">
                             <label class="control-label">To:</label>
                             <input type="text"
                                    placeholder="City"
                                    ng-model="vm.searchFields.to"
-                                   typeahead="flight.to for flight in vm.flights| unique:'to' | filter:$viewValue | limitTo:5" class="search-input">
+                                   typeahead="flight.to for flight in vm.flights| unique:'to' | filter:{'to':$viewValue} | limitTo:5" class="search-input">
                         </div>
                         <div class="form-group col-md-12">
                             <label class="control-label">Depart:</label>
